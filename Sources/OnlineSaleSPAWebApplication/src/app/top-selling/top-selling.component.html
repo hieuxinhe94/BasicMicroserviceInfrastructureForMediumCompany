@@ -1,0 +1,35 @@
+<div class="section">
+  <!-- container -->
+  <div class="container">
+    <div class="section-title">
+      <h4 class="title">Other selling</h4>
+      <div class="section-nav">
+        <div id="slick-nav-3" class="products-slick-nav"></div>
+      </div>
+    </div>
+    <!-- row -->
+    <div class="row">
+      <div class="col-md-4 col-xs-6" *ngFor="let item of products">
+        <div class="products-widget-slick" data-nav="#slick-nav-3">
+          <div>
+            <!-- product widget -->
+            <div class="product-widget">
+              <div class="product-img">
+                <img src="{{item.productThumb}}" alt="">
+              </div>
+              <div class="product-body">
+                <p class="product-category">Category</p>
+                <h3 class="product-name"><a href="#">{{item.productName}}</a></h3>
+                <h4 class="product-price">${{item.productPrice}} <del class="product-old-price">${{item.productCostReference}}</del></h4>
+              </div>
+            </div>
+            <!-- product widget -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /row -->
+  </div>
+  <!-- /container -->
+</div>

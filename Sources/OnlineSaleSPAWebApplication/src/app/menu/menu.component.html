@@ -1,0 +1,17 @@
+<nav id="navigation">
+    <!-- container -->
+    <div class="container">
+      <!-- responsive-nav -->
+      <div id="responsive-nav">
+        <!-- NAV -->
+        <ul class="main-nav nav navbar-nav" >
+          <li *ngFor="let item of menus">
+            <a class="{{item.class}}" href="{{item.href}}">{{item.text}}</a>
+          </li>
+        </ul>
+        <!-- /NAV -->
+      </div>
+      <!-- /responsive-nav -->
+    </div>
+    <!-- /container -->
+  </nav>
